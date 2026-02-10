@@ -67,7 +67,7 @@ export const PROJECTS_DATA: Record<ProjectId, ProjectData> = {
         ],
         testImg: [
           '/es-test-db.png',
-          '/es-test.png'
+          '/es-test.PNG'
         ]
       },
       {
