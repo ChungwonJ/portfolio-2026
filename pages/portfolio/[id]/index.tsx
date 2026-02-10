@@ -12,7 +12,9 @@ export default function ProjectDetailPage() {
   const router = useRouter();
   const { id } = router.query;
 
-  if (!router.isReady) return null;
+  if (!router.isReady) {
+    return <div>Loading...</div>;
+  }
 
   const project = PROJECTS_DATA[id as ProjectId];
 
