@@ -87,6 +87,16 @@
   }
 }
 
+.src {
+  word-break: break-all;
+  overflow-wrap: break-word;
+  white-space: normal;
+
+  &>a{
+       word-break: break-all;
+  }
+}
+
 @media (max-width: 1180px) {
   .imageArea {
     flex-direction: column;

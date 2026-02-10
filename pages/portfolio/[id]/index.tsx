@@ -46,7 +46,7 @@ export default function ProjectDetailPage() {
           {project.projectSrc.map((link, linkIndex) => (
             <React.Fragment key={`link-group-${linkIndex}`}>
               {link.src.map((url, urlIndex) => (
-                <li key={`${linkIndex}-${urlIndex}`}>
+                <li key={`${linkIndex}-${urlIndex}`} className={styles.src}>
                   {link.title}
                   <Link href={url} target="_blank" rel="noopener noreferrer">
                     {url}
@@ -84,7 +84,7 @@ export default function ProjectDetailPage() {
           {project.architectureSrc.map((link, linkIndex) => (
             <React.Fragment key={`arch-link-${linkIndex}`}>
               {link.src.map((url, urlIndex) => (
-                <li key={`${linkIndex}-${urlIndex}`}>
+                <li key={`${linkIndex}-${urlIndex}`} className={styles.src}>
                   {link.title}
                   <Link href={url} target="_blank" rel="noopener noreferrer">
                     {url}
