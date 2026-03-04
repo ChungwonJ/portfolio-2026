@@ -34,12 +34,12 @@ export default function ProjectDetailPage() {
       </header>
 
       <SectionTitle title="Project" />
-      <div className={styles.imageGrid}>
+      {/* <div className={styles.imageGrid}>
         <img
           src={project.architectureImage}
           alt={`${project.name} 전체 아키텍처`}
         />
-      </div>
+      </div> */}
 
       {project.projectSrc && project.projectSrc.length > 0 && (
         <ul>
